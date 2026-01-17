@@ -412,11 +412,15 @@ header {
 .featured-split .container {
   align-items: flex-start;
   gap: 32px;
+  width: calc(100% - 50px);
+  max-width: none;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .featured-image img {
-  width: calc(100% + 50px);
-  max-height: 1350px;
+  width: calc(100% + 125px);
+  max-height: 1650px;
   object-fit: cover;
   object-position: center;
   border-radius: 18px;
