@@ -19,6 +19,7 @@ const htmlForLocation = (loc) => `<!doctype html>
   <meta property="og:title" content="${loc.name} | ${site.brandName}">
   <meta property="og:description" content="Coffee, tacos, and community in ${loc.addressLines.join(", ")}.">
   <meta property="og:image" content="../assets/images/${loc.heroImage}.jpg">
+  <link rel="icon" type="image/png" href="../assets/images/cafeLatte_logo_glyph.png">
   <link rel="stylesheet" href="../assets/css/styles.css">
   <script>window.__BASE_PATH__ = "../";</script>
   <script src="../assets/js/main.js" defer></script>

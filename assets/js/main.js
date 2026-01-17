@@ -40,10 +40,14 @@ const buildNav = (site) => {
   const page = document.body.dataset.page || "";
   const isActive = (p) => (p === page ? 'aria-current="page"' : "");
   const homeHref = basePath === "./" ? "./" : basePath;
+  const logo = `${basePath}assets/images/cafeLatte_logo.png`;
 
   navEl.innerHTML = `
     <div class="nav">
-      <a class="nav__brand" href="${homeHref}">${site.brandName}</a>
+      <a class="nav__brand" href="${homeHref}">
+        <img src="${logo}" alt="${site.brandName} logo">
+        <span class="sr-only">${site.brandName}</span>
+      </a>
       <div class="nav__links" aria-label="Primary">
         <a href="${basePath}about/" ${isActive("about")}>About</a>
         <a href="${basePath}locations/" ${isActive("locations")}>Locations</a>
@@ -80,11 +84,15 @@ const buildNav = (site) => {
 const buildFooter = (site) => {
   const footer = document.querySelector("[data-footer]");
   if (!footer) return;
+  const logo = `${basePath}assets/images/cafeLatte_logo.png`;
   footer.innerHTML = `
     <div class="footer">
       <div class="footer__inner">
         <div>
-          <div class="footer__brand">${site.brandName}</div>
+          <div class="footer__brand">
+            <img src="${logo}" alt="${site.brandName} logo">
+            <span class="sr-only">${site.brandName}</span>
+          </div>
           <p class="muted">${site.tagline}</p>
         </div>
         <div class="list">
