@@ -186,6 +186,15 @@ header {
   font-size: clamp(32px, 5vw, 44px);
   color: var(--color-brand);
   white-space: nowrap;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.nav__viewport {
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  color: var(--color-muted);
 }
 
 .nav__links {

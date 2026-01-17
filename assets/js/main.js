@@ -43,7 +43,10 @@ const buildNav = (site) => {
 
   navEl.innerHTML = `
     <div class="nav">
-      <a class="nav__brand" href="${homeHref}">${site.brandName}</a>
+      <a class="nav__brand" href="${homeHref}">
+        ${site.brandName}
+        <span class="nav__viewport" data-viewport-label></span>
+      </a>
       <div class="nav__links" aria-label="Primary">
         <a href="${basePath}about/" ${isActive("about")}>About</a>
         <a href="${basePath}locations/" ${isActive("locations")}>Locations</a>
@@ -406,11 +409,22 @@ const renderContactPage = (site) => {
   });
 };
 
+const initViewportLabel = () => {
+  const label = document.querySelector("[data-viewport-label]");
+  if (!label) return;
+  const setLabel = () => {
+    label.textContent = ` (${Math.round(window.innerWidth)}px)`;
+  };
+  setLabel();
+  window.addEventListener("resize", setLabel);
+};
+
 const init = async () => {
   try {
     const site = await loadData("site");
     buildNav(site);
     buildFooter(site);
+    initViewportLabel();
 
     const page = document.body.dataset.page || "home";
     if (page === "home") {
