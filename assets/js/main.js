@@ -52,9 +52,6 @@ const buildNav = (site) => {
         <a href="${site.shopHref}" target="_blank" rel="noreferrer">Shop</a>
         <a href="${basePath}order/" ${isActive("order")}>Order</a>
       </div>
-      <div class="nav__cta">
-        <a class="btn primary" href="${basePath}order/">${site.primaryCtaLabel}</a>
-      </div>
       <button class="nav__toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -66,7 +63,6 @@ const buildNav = (site) => {
       <a href="${basePath}contact/">Contact</a>
       <a href="${site.shopHref}" target="_blank" rel="noreferrer">Shop</a>
       <a href="${basePath}order/">Order</a>
-      <a class="btn primary" href="${basePath}order/">${site.primaryCtaLabel}</a>
     </div>
   `;
   navEl.insertAdjacentHTML("beforeend", `<div class="topBanner-divider" aria-hidden="true"></div>`);
