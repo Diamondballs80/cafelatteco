@@ -173,7 +173,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 75px;
+  padding: 0 50px;
   width: 100%;
   margin: 0 auto;
   border-bottom: 2px solid rgba(196, 81, 43, 0.22);
@@ -181,7 +181,7 @@ header {
 
 .nav__brand {
   font-family: var(--font-display);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   font-size: 44px;
   color: var(--color-brand);
