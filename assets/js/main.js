@@ -80,7 +80,8 @@ const buildNav = (site) => {
 const buildFooter = (site) => {
   const footer = document.querySelector("[data-footer]");
   if (!footer) return;
-  const logo = `${basePath}assets/images/cafeLatte_logo_rust.png`;
+  // cache-bust to ensure the newest logo loads
+  const logo = `${basePath}assets/images/cafeLatte_logo_rust.png?v=2`;
   footer.innerHTML = `
     <div class="footer">
       <div class="footer__inner">
