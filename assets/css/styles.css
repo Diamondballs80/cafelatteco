@@ -7,6 +7,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "AntiqueOliveCompact";
+  src: url("../fonts/AntiqueOlivecompact%20Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --font-display: "CafeLatteCo", "Helvetica Neue", Arial, sans-serif;
   --font-body: "CafeLatteCo", "Helvetica Neue", Arial, sans-serif;
@@ -352,6 +360,7 @@ header {
   left: 50%;
   transform: translateX(-50%);
   bottom: 80px;
+  font-family: "AntiqueOliveCompact", var(--font-display);
 }
 
 .hero__cta:hover {
