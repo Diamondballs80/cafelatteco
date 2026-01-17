@@ -871,6 +871,13 @@ header {
   }
 }
 
+@media (max-width: 500px) {
+  .mobile-drawer {
+    inset: 50.5px 0 0 0;
+    height: calc(100vh - 50.5px);
+  }
+}
+
 @media (max-width: 640px) {
   .section {
     padding: 56px 16px;
