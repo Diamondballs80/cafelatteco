@@ -359,12 +359,12 @@ header {
 }
 
 .hero__cta {
-  min-width: 440px;
+  min-width: 300px;
   background: #fef4e4;
   color: var(--color-rust);
   border: 2px solid var(--color-rust);
   letter-spacing: 0.1em;
-  font-size: 36px;
+  font-size: 42px;
   padding: 12px 20px;
   position: absolute;
   left: 50%;
