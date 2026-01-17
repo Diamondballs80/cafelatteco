@@ -881,7 +881,7 @@ header {
   }
 }
 
-@media (max-width: 681px) {
+@media (max-width: 760px) {
   .featured-image img {
     width: 100%;
     max-width: none;
