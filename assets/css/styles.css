@@ -8,6 +8,15 @@
 }
 
 @font-face {
+  font-family: "CafeLatteCoCondensed";
+  src: url("../fonts/CafeLatteCoCondensed.woff2") format("woff2"),
+       url("../fonts/CafeLatteCoCondensed.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "AntiqueOliveCompact";
   src: url("../fonts/AntiqueOlivecompact%20Regular.ttf") format("truetype");
   font-weight: 400;
@@ -360,7 +369,7 @@ header {
   left: 50%;
   transform: translateX(-50%);
   bottom: 80px;
-  font-family: "AntiqueOliveCompact", var(--font-display);
+  font-family: "CafeLatteCoCondensed", "CafeLatteCo", var(--font-display);
 }
 
 .hero__cta:hover {
