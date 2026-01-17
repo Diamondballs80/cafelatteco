@@ -420,7 +420,7 @@ header {
 
 .featured-split .container {
   align-items: flex-start;
-  column-gap: 96px;
+  column-gap: 126px;
   row-gap: 32px;
   width: calc(100% - 50px);
   max-width: none;
@@ -882,8 +882,13 @@ header {
 }
 
 @media (max-width: 760px) {
+  .featured-split .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .featured-image img {
-    width: 100%;
+    width: calc(100% - 50px);
     max-width: none;
     min-width: 0;
     height: auto;
