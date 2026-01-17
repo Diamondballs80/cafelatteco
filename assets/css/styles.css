@@ -239,8 +239,8 @@ header {
 
 .mobile-drawer {
   position: fixed;
-  inset: 64px 0 0 0;
-  height: calc(100vh - 64px);
+  inset: 62.5px 0 0 0;
+  height: calc(100vh - 62.5px);
   background: #f2efe4;
   color: #403f41;
   display: flex;
