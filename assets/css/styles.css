@@ -431,9 +431,7 @@ header {
   width: 40vw;
   max-width: calc(100% + 125px);
   min-width: 320px;
-  aspect-ratio: 2 / 3;
-  height: auto;
-  max-height: 1650px;
+  height: 1650px;
   object-fit: cover;
   object-position: center;
   border-radius: 18px;
@@ -887,8 +885,7 @@ header {
     width: 100%;
     max-width: none;
     min-width: 0;
-    aspect-ratio: auto;
-    max-height: 1650px;
+    height: auto;
   }
 }
 
