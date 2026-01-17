@@ -428,7 +428,11 @@ header {
 }
 
 .featured-image img {
-  width: calc(100% + 125px);
+  width: 40vw;
+  max-width: calc(100% + 125px);
+  min-width: 320px;
+  aspect-ratio: 2 / 3;
+  height: auto;
   max-height: 1650px;
   object-fit: cover;
   object-position: center;
@@ -875,6 +879,16 @@ header {
   .mobile-drawer {
     inset: 50.5px 0 0 0;
     height: calc(100vh - 50.5px);
+  }
+}
+
+@media (max-width: 681px) {
+  .featured-image img {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    aspect-ratio: auto;
+    max-height: 1650px;
   }
 }
 
