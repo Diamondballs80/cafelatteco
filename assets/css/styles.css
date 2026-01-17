@@ -161,19 +161,10 @@ header {
 }
 
 .nav__brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
   font-family: var(--font-display);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   font-size: 18px;
-}
-
-.nav__brand img {
-  display: block;
-  height: 34px;
-  width: auto;
 }
 
 .nav__links {
@@ -288,6 +279,21 @@ header {
   object-fit: cover;
   transform: scale(1.04);
   animation: slow-pan 18s ease-in-out infinite alternate;
+}
+
+.hero__media-logo {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.hero__media-logo img {
+  width: 46%;
+  max-width: 280px;
+  min-width: 160px;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.25));
 }
 
 .badge {

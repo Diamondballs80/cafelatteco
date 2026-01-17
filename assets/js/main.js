@@ -40,14 +40,10 @@ const buildNav = (site) => {
   const page = document.body.dataset.page || "";
   const isActive = (p) => (p === page ? 'aria-current="page"' : "");
   const homeHref = basePath === "./" ? "./" : basePath;
-  const logo = `${basePath}assets/images/cafeLatte_logo.png`;
 
   navEl.innerHTML = `
     <div class="nav">
-      <a class="nav__brand" href="${homeHref}">
-        <img src="${logo}" alt="${site.brandName} logo">
-        <span class="sr-only">${site.brandName}</span>
-      </a>
+      <a class="nav__brand" href="${homeHref}">${site.brandName}</a>
       <div class="nav__links" aria-label="Primary">
         <a href="${basePath}about/" ${isActive("about")}>About</a>
         <a href="${basePath}locations/" ${isActive("locations")}>Locations</a>
@@ -112,6 +108,7 @@ const renderHero = (site) => {
   const hero = document.querySelector("[data-home-hero]");
   if (!hero) return;
   const heroImg = renderPicture("hero-coffee", "Latte art in a ceramic cup");
+  const logo = `${basePath}assets/images/cafeLatte_logo.png`;
   hero.innerHTML = `
     <div class="hero">
       <div class="hero__inner">
@@ -126,6 +123,9 @@ const renderHero = (site) => {
         </div>
         <div class="hero__media" aria-hidden="true">
           ${heroImg}
+          <div class="hero__media-logo">
+            <img src="${logo}" alt="${site.brandName} logo">
+          </div>
         </div>
       </div>
     </div>
