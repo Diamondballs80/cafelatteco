@@ -437,9 +437,10 @@ header {
 
 .featured-title {
   font-family: var(--font-display);
-  font-size: clamp(32px, 5vw, 44px);
+  font-size: clamp(34px, 5.2vw, 46px);
   color: var(--color-brand);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
+  line-height: 1.08;
   text-transform: uppercase;
   margin: 0;
 }
@@ -449,7 +450,8 @@ header {
   font-size: clamp(29px, 4.7vw, 41px);
   font-weight: 700;
   color: #403f41;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
+  line-height: 1.02;
   text-transform: uppercase;
   margin: 0;
 }
