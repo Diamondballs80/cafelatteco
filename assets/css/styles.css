@@ -15,6 +15,7 @@
   --color-amber: #ea6f3f;
   --color-olive: #8d6b32;
   --color-rust: #c4512b;
+  --color-brand: #db583e;
   --color-graphite: #14110f;
   --color-muted: #5b5149;
   --container: 1080px;
@@ -54,6 +55,7 @@ h4 {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin: 0 0 0.4em;
+  color: var(--color-brand);
 }
 
 p {
@@ -165,7 +167,8 @@ header {
   font-family: var(--font-display);
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 24px;
+  color: var(--color-brand);
 }
 
 .nav__links {
