@@ -166,7 +166,7 @@ header {
   top: 0;
   z-index: 20;
   backdrop-filter: blur(14px);
-  background: rgba(253, 248, 241, 0.9);
+  background: #f7efe2;
 }
 
 .nav {
@@ -250,7 +250,7 @@ header {
   position: fixed;
   inset: 62.5px 0 0 0;
   height: calc(100vh - 62.5px);
-  background: #f2efe4;
+  background: #f7efe2;
   color: #403f41;
   display: flex;
   flex-direction: column;
