@@ -431,7 +431,7 @@ header {
   width: 50vw;
   max-width: calc(100% + 125px);
   min-width: 320px;
-  height: 1400px;
+  height: 1000px;
   object-fit: cover;
   object-position: center;
   border-radius: 18px;
