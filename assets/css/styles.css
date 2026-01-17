@@ -419,7 +419,9 @@ header {
 }
 
 .featured-split .container {
+  display: flex;
   align-items: flex-start;
+  flex-wrap: nowrap;
   column-gap: 126px;
   row-gap: 32px;
   width: calc(100% - 50px);
