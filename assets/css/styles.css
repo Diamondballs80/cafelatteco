@@ -173,7 +173,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 75px;
+  padding: 4px 75px;
   width: 100%;
   margin: 0 auto;
   border-bottom: 2px solid rgba(196, 81, 43, 0.22);
