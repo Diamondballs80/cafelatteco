@@ -420,7 +420,7 @@ header {
 
 .featured-split .container {
   align-items: flex-start;
-  column-gap: 32px;
+  column-gap: 96px;
   row-gap: 32px;
   width: calc(100% - 50px);
   max-width: none;
