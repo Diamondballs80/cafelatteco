@@ -150,7 +150,6 @@ header {
   z-index: 20;
   backdrop-filter: blur(14px);
   background: rgba(253, 248, 241, 0.9);
-  border-bottom: 1px solid rgba(15, 10, 6, 0.06);
 }
 
 .nav {
@@ -246,6 +245,7 @@ header {
   overflow: hidden;
   padding: 0;
   width: 100%;
+  margin: 0;
 }
 
 .hero::before {
