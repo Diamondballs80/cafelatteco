@@ -306,14 +306,11 @@ header {
 .hero__center {
   position: relative;
   z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
+  display: grid;
+  place-items: center;
   gap: 20px;
   text-align: center;
   padding: 20px;
-  padding-bottom: 80px;
   width: 100%;
   height: 100%;
 }
@@ -351,6 +348,10 @@ header {
   letter-spacing: 0.1em;
   font-size: 32px;
   padding: 12px 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 80px;
 }
 
 .hero__inner {
