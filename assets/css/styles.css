@@ -415,9 +415,10 @@ header {
 }
 
 .featured-image img {
-  width: 100%;
-  max-height: 540px;
+  width: calc(100% + 50px);
+  max-height: 1350px;
   object-fit: cover;
+  object-position: center;
   border-radius: 18px;
   border: 6px solid var(--color-rust);
   display: block;
@@ -440,7 +441,7 @@ header {
 }
 
 .featured-subtitle {
-  font-size: 18px;
+  font-size: clamp(32px, 5vw, 44px);
   font-weight: 700;
   color: var(--color-ink);
   letter-spacing: 0.06em;
