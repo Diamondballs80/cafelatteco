@@ -105,19 +105,33 @@ const buildFooter = (site) => {
 const renderHero = (site) => {
   const hero = document.querySelector("[data-home-hero]");
   if (!hero) return;
-  const heroImg = site.heroBackgroundUrl
-    ? `
-      <picture>
-        <img src="${site.heroBackgroundUrl}" alt="${site.brandName} hero background">
-      </picture>
-    `
+  const fallbackImg = site.heroBackgroundUrl
+    ? `<img src="${site.heroBackgroundUrl}" alt="${site.brandName} hero background">`
     : renderPicture(site.heroBackground || "hero-coffee", `${site.brandName} hero background`);
+  const heroMedia = site.heroVideoUrl
+    ? `
+        <div class="hero__background" aria-hidden="true">
+          <div class="hero__video">
+            <iframe
+              src="${site.heroVideoUrl}?background=1&autoplay=1&muted=1&loop=1&autopause=0&controls=0&playsinline=1&title=0&byline=0&portrait=0"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+              aria-hidden="true"
+            ></iframe>
+          </div>
+          ${fallbackImg}
+        </div>
+      `
+    : `
+        <div class="hero__background" aria-hidden="true">
+          ${fallbackImg}
+        </div>
+      `;
   const logo = `${basePath}assets/images/cafeLatte_logo_rust.png?v=2`;
   hero.innerHTML = `
     <section class="hero hero--full" aria-label="${site.brandName}">
-      <div class="hero__background" aria-hidden="true">
-        ${heroImg}
-      </div>
+      ${heroMedia}
       <div class="hero__overlay"></div>
       <div class="hero__center">
         <div class="hero__logo-badge">
