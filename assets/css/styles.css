@@ -240,12 +240,14 @@ header {
 .mobile-drawer {
   position: fixed;
   inset: 0;
-  background: rgba(253, 248, 241, 0.95);
+  background: var(--color-cream);
   color: var(--color-ink);
   display: none;
   flex-direction: column;
   padding: 28px 20px;
   gap: 20px;
+  align-items: center;
+  text-align: center;
 }
 
 .mobile-drawer.open {
