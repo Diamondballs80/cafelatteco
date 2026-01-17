@@ -424,7 +424,7 @@ header {
   object-fit: cover;
   object-position: center;
   border-radius: 18px;
-  border: 6px solid var(--color-rust);
+  border: 2px solid var(--color-rust);
   display: block;
 }
 
@@ -445,9 +445,10 @@ header {
 }
 
 .featured-subtitle {
-  font-size: clamp(32px, 5vw, 44px);
+  font-family: "CafeLatteCoCondensed", "CafeLatteCo", var(--font-display);
+  font-size: clamp(29px, 4.7vw, 41px);
   font-weight: 700;
-  color: var(--color-ink);
+  color: #403f41;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0;
