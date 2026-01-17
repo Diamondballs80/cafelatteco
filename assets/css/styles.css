@@ -887,8 +887,14 @@ header {
     align-items: center;
   }
 
+  .featured-image {
+    width: 100%;
+    padding: 0 25px;
+    box-sizing: border-box;
+  }
+
   .featured-image img {
-    width: calc(100% - 50px);
+    width: 100%;
     max-width: none;
     min-width: 0;
     height: auto;
