@@ -298,6 +298,7 @@ header {
   right: 0;
   bottom: 0;
   height: 4px;
+  min-height: 4px;
   background: var(--color-brand);
   z-index: 2;
 }
@@ -310,6 +311,7 @@ header {
   place-items: center;
   text-align: center;
   padding: 20px;
+  padding-bottom: 80px;
 }
 
 .hero__logo-badge {
@@ -343,6 +345,8 @@ header {
   color: var(--color-ink);
   border: 2px solid var(--color-rust);
   letter-spacing: 0.1em;
+  font-size: 24px;
+  padding: 18px 24px;
 }
 
 .hero__inner {
