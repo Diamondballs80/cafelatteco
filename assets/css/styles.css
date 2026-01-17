@@ -173,7 +173,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4px 75px;
+  padding: 0 75px;
   width: 100%;
   margin: 0 auto;
   border-bottom: 2px solid rgba(196, 81, 43, 0.22);
@@ -195,7 +195,7 @@ header {
 }
 
 .topBanner-divider {
-  height: 4px;
+  height: 2px;
   background: var(--color-brand);
   width: 100%;
   margin: 0;
@@ -316,8 +316,8 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 4px;
-  min-height: 4px;
+  height: 2px;
+  min-height: 2px;
   background: var(--color-brand);
   z-index: 2;
 }
