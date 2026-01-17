@@ -116,11 +116,10 @@ const renderHero = (site) => {
       </div>
       <div class="hero__overlay"></div>
       <div class="hero__center">
-        <img class="hero__logo-badge" src="${logo}" alt="${site.brandName} logo">
-        <div class="hero__cta-bar">
-          <a class="btn primary" href="${basePath}${site.primaryCtaHref}">${site.primaryCtaLabel}</a>
-          <a class="btn" href="${basePath}${site.secondaryCtaHref}">${site.secondaryCtaLabel}</a>
+        <div class="hero__logo-badge">
+          <img src="${logo}" alt="${site.brandName} logo">
         </div>
+        <a class="btn hero__cta" href="${basePath}${site.primaryCtaHref}">${site.primaryCtaLabel}</a>
       </div>
     </section>
   `;
