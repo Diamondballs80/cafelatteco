@@ -80,7 +80,7 @@ const buildNav = (site) => {
 const buildFooter = (site) => {
   const footer = document.querySelector("[data-footer]");
   if (!footer) return;
-  const logo = `${basePath}assets/images/cafeLatte_logo.png`;
+  const logo = `${basePath}assets/images/cafeLatte_logo_rust.png`;
   footer.innerHTML = `
     <div class="footer">
       <div class="footer__inner">

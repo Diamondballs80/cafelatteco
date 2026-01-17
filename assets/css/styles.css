@@ -285,8 +285,8 @@ header {
 }
 
 .hero__logo-badge {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   background: var(--color-amber);
   display: grid;
@@ -296,7 +296,7 @@ header {
 }
 
 .hero__logo-badge img {
-  width: 120px;
+  width: 160px;
   height: auto;
 }
 
