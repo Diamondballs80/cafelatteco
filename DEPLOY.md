@@ -15,7 +15,7 @@ node scripts/build.js
 - Publish from the `main` branch using the repository root as the Pages source.
 - `.nojekyll` is present to skip Jekyll processing.
 - `CNAME` contains a placeholder (`www.REPLACE_WITH_DOMAIN.com`). Update it to the paid domain, then push to `main`.
-- All paths are relative-friendly, so the site works under `https://diamondgeezer.github.io/cafelatteco/`.
+- All paths are relative-friendly, so the site works under `https://diamondballs80.github.io/cafelatteco/`.
 
 ## Custom domain + HTTPS
 1) In GitHub: Settings → Pages → Custom domain → enter your domain (same as `CNAME`).

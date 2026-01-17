@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://diamondgeezer.github.io/cafelatteco/sitemap.xml
+Sitemap: https://diamondballs80.github.io/cafelatteco/sitemap.xml

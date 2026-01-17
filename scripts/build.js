@@ -61,7 +61,7 @@ const buildSitemap = () => {
   ];
   const locUrls = locations.map((loc) => `locations/${loc.slug}.html`);
   const lines = [...urls, ...locUrls].map(
-    (url) => `<url><loc>https://diamondgeezer.github.io/cafelatteco/${url}</loc></url>`
+    (url) => `<url><loc>https://diamondballs80.github.io/cafelatteco/${url}</loc></url>`
   );
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${lines.join(
     "\n"

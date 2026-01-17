@@ -23,7 +23,7 @@ Build a fast, modern, responsive marketing site for a coffee shop. The site shou
 - The site must be publishable via GitHub Pages from the `main` branch.
 - Prefer a structure that publishes from the repository root (i.e., the published output includes an `index.html` at the root of the publish source).
 - Use relative paths suitable for project pages (the site may be served under a subpath like `/cafelatteco/`).
-- All built assets (HTML, CSS, JS, images, fonts) must work correctly when served from the project subpath `https://diamondgeezer.github.io/cafelatteco/`.
+- All built assets (HTML, CSS, JS, images, fonts) must work correctly when served from the project subpath `https://diamondballs80.github.io/cafelatteco/`.
 - Include an empty `.nojekyll` file at the publish root to prevent Jekyll processing issues.
 
 ## Deployment Requirements
@@ -251,4 +251,3 @@ No hardcoded `font-family` declarations are allowed outside these variables.
 ## Future Hook (Phase 2)
 - Add “Order Ahead” integration (Clover/third-party) via `/order` page links first.
 - Later: build a real ordering flow + backend (Parse/Back4App) + Clover API integration and printing.
-
