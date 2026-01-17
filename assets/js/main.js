@@ -105,7 +105,13 @@ const buildFooter = (site) => {
 const renderHero = (site) => {
   const hero = document.querySelector("[data-home-hero]");
   if (!hero) return;
-  const heroImg = renderPicture(site.heroBackground || "hero-coffee", `${site.brandName} hero background`);
+  const heroImg = site.heroBackgroundUrl
+    ? `
+      <picture>
+        <img src="${site.heroBackgroundUrl}" alt="${site.brandName} hero background">
+      </picture>
+    `
+    : renderPicture(site.heroBackground || "hero-coffee", `${site.brandName} hero background`);
   const logo = `${basePath}assets/images/cafeLatte_logo_rust.png?v=2`;
   hero.innerHTML = `
     <section class="hero hero--full" aria-label="${site.brandName}">
