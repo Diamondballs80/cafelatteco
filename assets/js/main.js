@@ -107,28 +107,22 @@ const buildFooter = (site) => {
 const renderHero = (site) => {
   const hero = document.querySelector("[data-home-hero]");
   if (!hero) return;
-  const heroImg = renderPicture("hero-coffee", "Latte art in a ceramic cup");
+  const heroImg = renderPicture(site.heroBackground || "hero-coffee", `${site.brandName} hero background`);
   const logo = `${basePath}assets/images/cafeLatte_logo.png`;
   hero.innerHTML = `
-    <div class="hero">
-      <div class="hero__inner">
-        <div>
-          <div class="badge">Austin born</div>
-          <h1 class="hero__headline">${site.heroHeadline}</h1>
-          <p class="hero__subhead">${site.heroSubhead}</p>
-          <div class="btn-row">
-            <a class="btn primary" href="${basePath}${site.primaryCtaHref}">${site.primaryCtaLabel}</a>
-            <a class="btn" href="${basePath}${site.secondaryCtaHref}">${site.secondaryCtaLabel}</a>
-          </div>
-        </div>
-        <div class="hero__media" aria-hidden="true">
-          ${heroImg}
-          <div class="hero__media-logo">
-            <img src="${logo}" alt="${site.brandName} logo">
-          </div>
+    <section class="hero hero--full" aria-label="${site.brandName}">
+      <div class="hero__background" aria-hidden="true">
+        ${heroImg}
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__center">
+        <img class="hero__logo-badge" src="${logo}" alt="${site.brandName} logo">
+        <div class="hero__cta-bar">
+          <a class="btn primary" href="${basePath}${site.primaryCtaHref}">${site.primaryCtaLabel}</a>
+          <a class="btn" href="${basePath}${site.secondaryCtaHref}">${site.secondaryCtaLabel}</a>
         </div>
       </div>
-    </div>
+    </section>
   `;
 };
 
