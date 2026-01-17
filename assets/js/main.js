@@ -69,6 +69,7 @@ const buildNav = (site) => {
       <a class="btn primary" href="${basePath}order/">${site.primaryCtaLabel}</a>
     </div>
   `;
+  navEl.insertAdjacentHTML("beforeend", `<div class="topBanner-divider" aria-hidden="true"></div>`);
 
   const toggle = navEl.querySelector(".nav__toggle");
   const drawer = navEl.querySelector("[data-mobile-drawer]");
@@ -109,7 +110,7 @@ const renderHero = (site) => {
   const hero = document.querySelector("[data-home-hero]");
   if (!hero) return;
   const heroImg = renderPicture(site.heroBackground || "hero-coffee", `${site.brandName} hero background`);
-  const logo = `${basePath}assets/images/cafeLatte_logo.png`;
+  const logo = `${basePath}assets/images/cafeLatte_logo_rust.png?v=2`;
   hero.innerHTML = `
     <section class="hero hero--full" aria-label="${site.brandName}">
       <div class="hero__background" aria-hidden="true">
@@ -122,6 +123,7 @@ const renderHero = (site) => {
         </div>
         <a class="btn hero__cta" href="${basePath}${site.primaryCtaHref}">${site.primaryCtaLabel}</a>
       </div>
+      <div class="hero-divider" aria-hidden="true"></div>
     </section>
   `;
 };

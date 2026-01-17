@@ -177,6 +177,12 @@ header {
   gap: 18px;
 }
 
+.topBanner-divider {
+  height: 4px;
+  background: var(--color-brand);
+  width: 100%;
+}
+
 .nav__links a {
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -283,6 +289,16 @@ header {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.12);
+}
+
+.hero-divider {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  background: var(--color-brand);
+  z-index: 2;
 }
 
 .hero__center {
