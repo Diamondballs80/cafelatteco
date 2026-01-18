@@ -373,7 +373,11 @@ header {
   transform: translate(-50%, -50%) scale(1.14); /* punch-in to avoid edge reveal */
   border: 0;
   opacity: 0;
-  animation: hero-video-fade 0.3s ease forwards;
+  transition: opacity 300ms ease;
+}
+
+.hero__video iframe.is-visible {
+  opacity: 1;
 }
 
 @media (orientation: portrait) {
@@ -390,20 +394,10 @@ header {
   position: absolute;
   inset: 0;
 }
-
 .hero__overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.12);
-}
-
-@keyframes hero-video-fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .hero-divider {

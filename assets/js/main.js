@@ -145,6 +145,11 @@ const renderHero = (site) => {
       <div class="hero-divider" aria-hidden="true"></div>
     </section>
   `;
+
+  const iframe = hero.querySelector(".hero__video iframe");
+  iframe?.addEventListener("load", () => {
+    iframe.classList.add("is-visible");
+  });
 };
 
 const locationCard = (location) => {
