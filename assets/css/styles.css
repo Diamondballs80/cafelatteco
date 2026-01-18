@@ -523,28 +523,28 @@ header {
 
 .contact-hero__split {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 0.95fr);
-  gap: clamp(40px, 6vw, 90px);
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: clamp(48px, 7vw, 110px);
   align-items: center;
 }
 
 .contact-hero__title {
   font-family: var(--font-display);
-  font-size: clamp(44px, 5vw, 56px);
+  font-size: clamp(52px, 5.8vw, 68px);
   color: var(--color-brand);
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  margin: 0 0 18px;
+  margin: 0 0 22px;
 }
 
 .contact-hero__subtitle {
   font-family: "CafeLatteCoCondensed", "CafeLatteCo", var(--font-display);
-  font-size: clamp(22px, 2.6vw, 26px);
-  color: #403f41;
-  letter-spacing: 0.08em;
-  line-height: 1.4;
+  font-size: clamp(30px, 3vw, 36px);
+  color: var(--color-brand);
+  letter-spacing: 0.1em;
+  line-height: 1.35;
   text-transform: uppercase;
-  margin: 0 0 32px;
+  margin: 0 0 36px;
 }
 
 .contact-hero__meta {
@@ -562,13 +562,13 @@ header {
 
 .contact-hero__label {
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.28em;
   font-size: 13px;
   color: #403f41;
 }
 
 .contact-hero__meta a {
-  color: var(--color-ink);
+  color: var(--color-brand);
   text-decoration: none;
   font-size: 14px;
 }
@@ -579,7 +579,7 @@ header {
 
 .contact-hero__media {
   justify-self: end;
-  width: min(620px, 100%);
+  width: min(40vw, 640px);
 }
 
 .contact-hero__media img {
