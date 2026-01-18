@@ -109,8 +109,11 @@ const renderHero = (site) => {
   const hero = document.querySelector("[data-home-hero]");
   if (!hero) return;
   const fallbackImg = site.heroBackgroundUrl
-    ? `<img src="${site.heroBackgroundUrl}" alt="${site.brandName} hero background">`
-    : renderPicture(site.heroBackground || "hero-coffee", `${site.brandName} hero background`);
+    ? `<img class="hero__fallback" src="${site.heroBackgroundUrl}" alt="${site.brandName} hero background">`
+    : `<div class="hero__fallback">${renderPicture(
+        site.heroBackground || "hero-coffee",
+        `${site.brandName} hero background`
+      )}</div>`;
   const heroMedia = site.heroVideoUrl
     ? `
         <div class="hero__background" aria-hidden="true">
@@ -148,12 +151,16 @@ const renderHero = (site) => {
 
   const iframe = hero.querySelector(".hero__video iframe");
   const videoWrapper = hero.querySelector(".hero__video");
+  const heroSection = hero.querySelector(".hero");
   if (iframe) {
     const show = () => {
       if (!videoWrapper) return;
       // Force reflow so opacity transition reliably plays
       void videoWrapper.offsetWidth;
       videoWrapper.classList.add("is-visible");
+      if (heroSection && window.matchMedia("(orientation: landscape)").matches) {
+        heroSection.classList.add("hero--video-ready");
+      }
     };
     const delayedShow = () => requestAnimationFrame(() => requestAnimationFrame(show));
     iframe.addEventListener("load", delayedShow);
