@@ -508,6 +508,9 @@ header {
   text-transform: uppercase;
   margin: 0;
 }
+.featured-subtitle .subtitle-line {
+  display: block;
+}
 
 .featured-meta {
   font-family: "InterTightMedium", "Inter Tight", var(--font-body);
