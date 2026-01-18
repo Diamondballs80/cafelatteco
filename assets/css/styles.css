@@ -378,6 +378,16 @@ header {
 
 .hero__video iframe.is-visible {
   opacity: 1;
+  animation: heroVideoFade 1s ease forwards;
+}
+
+@keyframes heroVideoFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (orientation: portrait) {
