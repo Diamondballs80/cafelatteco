@@ -151,16 +151,12 @@ const renderHero = (site) => {
 
   const iframe = hero.querySelector(".hero__video iframe");
   const videoWrapper = hero.querySelector(".hero__video");
-  const heroSection = hero.querySelector(".hero");
   if (iframe) {
     const show = () => {
       if (!videoWrapper) return;
       // Force reflow so opacity transition reliably plays
       void videoWrapper.offsetWidth;
       videoWrapper.classList.add("is-visible");
-      if (heroSection && window.matchMedia("(orientation: landscape)").matches) {
-        heroSection.classList.add("hero--video-ready");
-      }
     };
     const delayedShow = () => requestAnimationFrame(() => requestAnimationFrame(show));
     iframe.addEventListener("load", delayedShow);
