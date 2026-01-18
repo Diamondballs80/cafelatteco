@@ -360,6 +360,8 @@ header {
   overflow: hidden;
   display: block;
   z-index: 2;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
 .hero__video iframe {
@@ -372,11 +374,9 @@ header {
   min-height: 100%;
   transform: translate(-50%, -50%) scale(1.14); /* punch-in to avoid edge reveal */
   border: 0;
-  opacity: 0;
-  transition: opacity 1s ease;
 }
 
-.hero__video iframe.is-visible {
+.hero__video.is-visible {
   opacity: 1;
 }
 

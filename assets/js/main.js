@@ -147,11 +147,13 @@ const renderHero = (site) => {
   `;
 
   const iframe = hero.querySelector(".hero__video iframe");
+  const videoWrapper = hero.querySelector(".hero__video");
   if (iframe) {
     const show = () => {
+      if (!videoWrapper) return;
       // Force reflow so opacity transition reliably plays
-      void iframe.offsetWidth;
-      iframe.classList.add("is-visible");
+      void videoWrapper.offsetWidth;
+      videoWrapper.classList.add("is-visible");
     };
     const delayedShow = () => requestAnimationFrame(() => requestAnimationFrame(show));
     iframe.addEventListener("load", delayedShow);
