@@ -524,6 +524,7 @@ header {
   align-items: center;
   gap: 12px;
   font-weight: 700;
+  font-size: 15px;
   letter-spacing: 0.06em;
 }
 
