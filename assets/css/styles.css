@@ -9,6 +9,14 @@
 }
 
 @font-face {
+  font-family: "InterTightMedium";
+  src: url("../fonts/InterTight-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "CafeLatteCo";
   src: url("../fonts/CafeLatteCoFont.woff2") format("woff2"),
        url("../fonts/CafeLatteCoFont.woff") format("woff");
@@ -481,10 +489,10 @@ header {
 }
 
 .featured-meta {
-  font-family: "InterTightExtraLight", "Inter Tight", var(--font-body);
+  font-family: "InterTightMedium", "Inter Tight", var(--font-body);
   display: grid;
   gap: 10px;
-  font-size: 17px;
+  font-size: 13px;
   color: var(--color-ink);
   letter-spacing: 0.01em;
   line-height: 1.5;
@@ -492,19 +500,21 @@ header {
 }
 
 .featured-location {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.32em;
   text-transform: uppercase;
 }
 
 .featured-hours {
   font-weight: 600;
+  font-size: 13px;
   letter-spacing: 0.04em;
 }
 
 .featured-address {
   font-weight: 600;
+  font-size: 13px;
   letter-spacing: 0.02em;
   line-height: 1.4;
 }
