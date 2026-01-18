@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700&display=swap");
+
 @font-face {
   font-family: "CafeLatteCo";
   src: url("../fonts/CafeLatteCoFont.woff2") format("woff2"),
@@ -471,7 +473,7 @@ header {
 }
 
 .featured-meta {
-  font-family: var(--font-body);
+  font-family: "Inter Tight", var(--font-body);
   font-size: 16px;
   color: var(--color-ink);
   letter-spacing: 0.02em;
