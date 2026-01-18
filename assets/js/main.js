@@ -151,6 +151,10 @@ const renderHero = (site) => {
 
   const iframe = hero.querySelector(".hero__video iframe");
   const videoWrapper = hero.querySelector(".hero__video");
+  if (videoWrapper) {
+    videoWrapper.classList.remove("is-visible");
+    videoWrapper.style.opacity = "0";
+  }
   if (iframe) {
     const show = () => {
       if (!videoWrapper) return;
@@ -161,7 +165,7 @@ const renderHero = (site) => {
     const delayedShow = () => requestAnimationFrame(() => requestAnimationFrame(show));
     iframe.addEventListener("load", delayedShow);
     // Fallback in case load fires before listener is attached or is cached
-    setTimeout(show, 1500);
+    setTimeout(show, 400);
   }
 };
 
