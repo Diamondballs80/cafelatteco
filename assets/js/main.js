@@ -161,11 +161,14 @@ const renderHero = (site) => {
       // Force reflow so opacity transition reliably plays
       void videoWrapper.offsetWidth;
       videoWrapper.classList.add("is-visible");
+      videoWrapper.style.opacity = "1";
     };
     const delayedShow = () => requestAnimationFrame(() => requestAnimationFrame(show));
     iframe.addEventListener("load", delayedShow);
-    // Fallback in case load fires before listener is attached or is cached
-    setTimeout(show, 400);
+    iframe.addEventListener("error", show);
+    // Fallbacks in case load fires before listener is attached or is cached
+    setTimeout(show, 1200);
+    setTimeout(show, 3000);
   }
 };
 
