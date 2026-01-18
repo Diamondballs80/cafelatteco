@@ -941,6 +941,12 @@ header {
   }
 }
 
+@media (max-width: 1420px) and (min-width: 901px) {
+  .featured-split .container {
+    column-gap: 166px;
+  }
+}
+
 @media (max-width: 500px) {
   .mobile-drawer {
     inset: 50.5px 0 0 0;
