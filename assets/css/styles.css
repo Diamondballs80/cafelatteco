@@ -503,7 +503,7 @@ header {
   font-size: clamp(29px, 4.7vw, 41px);
   font-weight: 700;
   color: #403f41;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   line-height: 1.02;
   text-transform: uppercase;
   margin: 0;
