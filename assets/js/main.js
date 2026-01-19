@@ -144,7 +144,7 @@ const renderHero = (site) => {
         <div class="hero__logo-badge">
           <img src="${logo}" alt="${site.brandName} logo">
         </div>
-        <a class="btn hero__cta" href="${basePath}${site.primaryCtaHref}">Order Here</a>
+        <a class="btn hero__cta" href="${site.primaryCtaHref}">Order Here</a>
       </div>
       <div class="hero-divider" aria-hidden="true"></div>
     </section>
