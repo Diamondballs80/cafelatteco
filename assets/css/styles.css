@@ -527,8 +527,10 @@ header {
 }
 
 .contact-hero .container {
-  padding-left: clamp(20px, 5vw, 50px);
-  padding-right: clamp(20px, 5vw, 50px);
+  width: 100%;
+  max-width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .contact-hero__split {
