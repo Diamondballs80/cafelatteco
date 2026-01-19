@@ -135,7 +135,7 @@ const renderHero = (site) => {
           ${fallbackImg}
         </div>
       `;
-  const logo = `${basePath}assets/images/cafeLatte_logo_glyph.png?v=2`;
+  const logo = `${basePath}assets/images/cafeLatte_logo_glyph_transparent.png?v=2`;
   hero.innerHTML = `
     <section class="hero hero--full" aria-label="${site.brandName}">
       ${heroMedia}
