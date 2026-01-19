@@ -81,7 +81,7 @@ const buildFooter = (site) => {
   const footer = document.querySelector("[data-footer]");
   if (!footer) return;
   // cache-bust to ensure the newest logo loads
-  const logo = `${basePath}assets/images/cafeLatte_logo_rust.png?v=2`;
+  const logo = `${basePath}assets/images/cafeLatte_logo_glyph.png?v=2`;
   footer.innerHTML = `
     <div class="footer">
       <div class="footer__inner">
@@ -134,7 +134,7 @@ const renderHero = (site) => {
           ${fallbackImg}
         </div>
       `;
-  const logo = `${basePath}assets/images/cafeLatte_logo_rust.png?v=2`;
+  const logo = `${basePath}assets/images/cafeLatte_logo_glyph.png?v=2`;
   hero.innerHTML = `
     <section class="hero hero--full" aria-label="${site.brandName}">
       ${heroMedia}
