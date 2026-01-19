@@ -234,7 +234,7 @@ header {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-size: 18px;
-  color: #403f41;
+  color: var(--color-brand);
   padding: 8px 0;
   border-bottom: 2px solid transparent;
   transition: border-color var(--transition);
@@ -242,7 +242,7 @@ header {
 
 .nav__links a:hover,
 .nav__links a[aria-current="page"] {
-  border-color: var(--color-ink);
+  border-color: var(--color-brand);
 }
 
 .nav__cta {
@@ -262,7 +262,7 @@ header {
   width: 22px;
   height: 2px;
   margin: 5px 0;
-  background: var(--color-ink);
+  background: var(--color-brand);
 }
 
 .mobile-drawer {
@@ -298,7 +298,7 @@ header {
   text-transform: uppercase;
   font-size: 18px;
   padding: 8px 0;
-  color: #403f41;
+  color: var(--color-brand);
   opacity: 0;
   transform: translateY(16px);
   transition: opacity 750ms ease, transform 750ms ease;
@@ -684,7 +684,7 @@ header {
 .hero__cta {
   min-width: 300px;
   background: #fef4e4;
-  color: var(--color-accent1);
+  color: var(--color-brand);
   border: 2px solid var(--color-accent1);
   letter-spacing: 0.1em;
   font-size: 42px;
