@@ -444,6 +444,29 @@ const initViewportLabel = () => {
   window.addEventListener("resize", setLabel);
 };
 
+const isIOS = () =>
+  /iP(hone|od|ad)/.test(navigator.platform) ||
+  (navigator.userAgent.includes("Mac") && "ontouchend" in document);
+
+const rewriteDirectionsLinkForIOS = () => {
+  if (!isIOS()) return;
+  const link = document.querySelector("[data-directions-link]");
+  if (!link) return;
+  try {
+    const url = new URL(link.href, window.location.origin);
+    const destination = url.searchParams.get("q") || url.searchParams.get("daddr") || link.href;
+    const appleHref = `maps://?q=${encodeURIComponent(destination)}`;
+    link.href = appleHref;
+    link.target = "_self";
+    link.rel = "noreferrer";
+  } catch (e) {
+    const appleFallback = `maps://?q=${encodeURIComponent(link.href)}`;
+    link.href = appleFallback;
+    link.target = "_self";
+    link.rel = "noreferrer";
+  }
+};
+
 const init = async () => {
   try {
     const site = await loadData("site");
@@ -458,6 +481,7 @@ const init = async () => {
       renderLocationsPreview(locations);
       renderAnnouncements(announcements);
       renderPhotoGrid(locations);
+      rewriteDirectionsLinkForIOS();
     }
     if (page === "about") {
       const locations = await loadData("locations");
