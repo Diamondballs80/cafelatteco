@@ -40,6 +40,7 @@ const buildNav = (site) => {
   const page = document.body.dataset.page || "";
   const isActive = (p) => (p === page ? 'aria-current="page"' : "");
   const homeHref = basePath === "./" ? "./" : basePath;
+  const orderHref = site.orderHref || `${basePath}order/`;
 
   navEl.innerHTML = `
     <div class="nav">
@@ -53,7 +54,7 @@ const buildNav = (site) => {
         <a href="${basePath}events/" ${isActive("events")}>Events</a>
         <a href="${basePath}contact/" ${isActive("contact")}>Contact</a>
         <a href="${site.shopHref}" target="_blank" rel="noreferrer">Shop</a>
-        <a href="${basePath}order/" ${isActive("order")}>Order</a>
+        <a href="${orderHref}" ${isActive("order")} target="_blank" rel="noreferrer">Order</a>
       </div>
       <button class="nav__toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -65,7 +66,7 @@ const buildNav = (site) => {
       <a href="${basePath}events/">Events</a>
       <a href="${basePath}contact/">Contact</a>
       <a href="${site.shopHref}" target="_blank" rel="noreferrer">Shop</a>
-      <a href="${basePath}order/">Order</a>
+      <a href="${orderHref}" target="_blank" rel="noreferrer">Order</a>
     </div>
   `;
   navEl.insertAdjacentHTML("beforeend", `<div class="topBanner-divider" aria-hidden="true"></div>`);
