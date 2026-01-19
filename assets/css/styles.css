@@ -53,6 +53,7 @@
   --color-accent2: #465755;
   --color-brand: #ede4d4;
   --color-secondaryText: #c1aa6c;
+  --color-tertiaryText: #d8ccb5;
   --color-graphite: #14110f;
   --color-muted: #5b5149;
   --container: 1080px;
@@ -642,6 +643,7 @@ header {
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 0.04em;
+  color: var(--color-tertiaryText);
 }
 
 .featured-address {
@@ -649,6 +651,7 @@ header {
   font-size: 15px;
   letter-spacing: 0.02em;
   line-height: 1.4;
+  color: var(--color-tertiaryText);
 }
 
 .featured-links {
