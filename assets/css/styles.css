@@ -446,7 +446,7 @@ header {
   width: 212px;
   height: 212px;
   border-radius: 50%;
-  background: var(--color-accent1);
+  background: var(--color-accent2);
   display: grid;
   place-items: center;
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.22);
