@@ -652,6 +652,9 @@ header {
   font-size: 15px;
   letter-spacing: 0.04em;
   color: var(--color-tertiaryText);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .featured-address {
